@@ -1,0 +1,26 @@
+name: Share what the tome has learned
+description: Paste the code from DungeonTome's "Share what the tome has learned" slip.
+title: "Findings"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing! In game: **Settings → Share what the tome has learned** (or `/tome share`), click **Copy code**, press **Ctrl+C**, then paste it below.
+
+        The code holds only the drops, counts and bosses the tome has noted. Nothing about you or your characters.
+  - type: textarea
+    id: code
+    attributes:
+      label: Your code
+      description: It starts with DTK1:
+      placeholder: DTK1:...
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else? (optional)
+      description: Anything odd you noticed, like a drop that seemed out of place.
+    validations:
+      required: false
